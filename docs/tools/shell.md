@@ -1,0 +1,3 @@
+```shell
+$ which python3
+```

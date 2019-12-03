@@ -1,0 +1,6 @@
+site_name: Today I Learned
+site_url: https://nikhilkumar80.github.io/til
+theme: material
+plugins:
+  - search:
+      lang: en
