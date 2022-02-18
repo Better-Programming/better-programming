@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://nikhilkumar80.github.io/til/</loc>
+         <lastmod>2022-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nikhilkumar80.github.io/til/android/user_interface/Dialogs/</loc>
+         <lastmod>2022-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nikhilkumar80.github.io/til/programming/DSL/</loc>
+         <lastmod>2022-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://nikhilkumar80.github.io/til/tools/shell/</loc>
+         <lastmod>2022-02-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
