@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build:
+  build-deploy:
     docker:
       - image: circleci/python:3.7
     steps:
@@ -11,4 +11,11 @@ jobs:
           command: pip3 install -q mkdocs mkdocs-material
       - run:
           name: Build & Publish to gh-pages
-          command: mkdocs gh-deploy
+          command: mkdocs gh-deploy --dirty
+workflows:
+  build-deploy: # workflow label
+    jobs:
+      - build-deploy:
+          filters:
+            branches:
+              only: master
