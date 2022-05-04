@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://nikhilkumar80.github.io/til/tools/circleci/">
+        <link rel="canonical" href="https://nikhilkumar80.github.io/til/android/Fragment/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
     
     
       
-        <title>CircleCI - Today I Learned</title>
+        <title>Fragment - Today I Learned</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#circleci" class="md-skip">
+        <a href="#fragment" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CircleCI
+              Fragment
             
           </span>
         </div>
@@ -193,12 +193,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -219,11 +221,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../android/Fragment/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Fragment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Fragment
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#listfragment" class="md-nav__link">
+    ListFragment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferencefragmentcompat" class="md-nav__link">
+    PreferenceFragmentCompat
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -235,7 +285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../android/Permissions/" class="md-nav__link">
+      <a href="../Permissions/" class="md-nav__link">
         Permissions
       </a>
     </li>
@@ -303,14 +353,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -331,21 +379,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tools/circleci/" class="md-nav__link">
         CircleCI
       </a>
-      
     </li>
   
 
@@ -357,7 +395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../shell/" class="md-nav__link">
+      <a href="../../tools/shell/" class="md-nav__link">
         Shell
       </a>
     </li>
@@ -391,6 +429,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#listfragment" class="md-nav__link">
+    ListFragment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferencefragmentcompat" class="md-nav__link">
+    PreferenceFragmentCompat
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -403,29 +463,119 @@
                 
 
 
-<h1 id="circleci">CircleCI</h1>
+<h1 id="fragment">Fragment</h1>
+<ul>
+<li>Fragments</li>
+<li>when is it created and destroyed?</li>
+<li>setHasOptionMenu()</li>
+<li>Singleton Pattern</li>
+<li>Fragment Arguments</li>
+<li>Starting an activity from a fragment</li>
+<li>Fragment arguments</li>
+<li>For the More Curious: Why Use Fragment Arguments? Why not just set an instance variable on the CrimeFragment when it is created?</li>
+<li>Retaining fragments from desrtroying</li>
+</ul>
+<p>A Fragment represents a reusable portion of your app's UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. </p>
+<p>Fragments cannot live on their own--they must be hosted by an activity or another fragment. The fragment’s view hierarchy becomes part of, or attaches to, the host’s view hierarchy.</p>
+<ul>
+<li><code>onCreateView(inflater, container, savedInstanceState)</code></li>
+</ul>
+<p><strong>Fragment Life Cycle</strong>
+<img alt="Screenshot" src="img/fragment_lifecycle.png" /></p>
+<h2 id="listfragment">ListFragment</h2>
+<p>Displays a list of items that are managed by an adapter, similar to ListActivity. It provides several methods for managing a list view, such as the onListItemClick() callback to handle click events.</p>
+<h2 id="preferencefragmentcompat">PreferenceFragmentCompat</h2>
+<p>Displays a hierarchy of Preference objects as a list. This is used to create a settings screen for your application.</p>
+<h1 id="dialogfragment">DialogFragment</h1>
+<ul>
+<li>https://developer.android.com/reference/androidx/fragment/app/DialogFragment</li>
+</ul>
+<p>Displays a floating dialog.</p>
+<p>A DialogFragment is a special fragment subclass that is designeed for creating and hosting dialogs.</p>
+<p>Strictly speaking, you do not need to host your dialog within a fragment, but doing so allows the <a href="https://developer.android.com/guide/fragments/fragmentmanager"><code>FragmentManager</code></a> to manage the state of the dialog and automatically restore the dialog when a configuration change occurs.</p>
+<pre><code class="language-kotlin">import androidx.fragment.app.DialogFragment;
+
+public class MyDialogFragment extends DialogFragment {
+    override fun onCreateView() {
+
+    }
+
+    override fun onViewCreaed() {
+
+    }
+
+    override fun onCreateDialog() {
+
+    }
+
+}
+
+// Show dialog
+FrgmentManager fm = getSupportFragmentManager()
+val myDialogFragment = MyDialogFragment.newInstance()
+myDialogFragment.show(fm, &quot;my_dialog_fragment&quot;)
+</code></pre>
+<h2 id="lifecycle">LifeCycle</h2>
+<pre><code class="language-shell"># on start
+onAttach
+onCreate
+onCreateDialog
+onCreateView
+onActivityCreated
+onStart
+onResume
+
+
+# on destroying
+onPause
+onStop
+onDestroyView
+onDestroy
+onDetach
+</code></pre>
+<h2 id="dialog">Dialog</h2>
+<p>Dialog is a small window that prompts user to make a decision or enter additional information.</p>
+<p><code>Dialog</code> is the base class for dialogs, but you should avoid instantiating <code>Dialog</code> directly. Instead, user one of the following subclasses:
+- AlertDialog
+- DatePickerDialog
+- TimePickerDIalog</p>
+<p>These classes define style and structure for your dialog, but you should use a <code>DialogFragment</code> as a container for your dialog. The <code>DialogFragment</code> class provides all the controls you need to create the dialog and manage its appearance, instead of calling methods on the <code>Dialog</code> object.</p>
+<h1 id="fragmentmanager">FragmentManager</h1>
+<p>Every FragmentActivity and its subclasses. such as AppCompatActivity, have access to the FragmentManager through <code>getSupportFragmentManager()</code></p>
+<p>Fragments can access host FragmentManager using <code>getParentFragmentManager()</code></p>
+<p>Fragments arte capable of hosting one or moree child fragments. Inside a fragment, you can get a refference to the FragmntManager that manages the fragment's childreen through <code>getChildFragmentManager()</code></p>
+<p><code>&lt;image src="https://developer.android.com/images/fragment_lifecycle.png" align=right&gt;</code></p>
+<p>Represents a portion of user interface in an Activity.
+Fragment class looks a lot like an Activity. It contains callback methods simillar to an Activity. In fact, if you're converting an existing Android application to use fragments, you might simply move code from your activity's callback methods into the respective callback methods of your fragment.</p>
+<ul>
+<li><strong>onCreate</strong>: The system calls this when creating the fragment.</li>
+<li><strong>onCreateView</strong>:</li>
+<li><strong>onPause</strong>:</li>
+</ul>
+<p>There are also a few subclasses that you might want to extend, instead of the base Fragment class:</p>
+<pre><code class="language-kotlin">class MyFragment : Fragment() {
+
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.my_fragment, container, false)
+    }
+}
+</code></pre>
 <h1 id="faq">FAQ</h1>
-<h2 id="excluding-a-branch-from-ci">Excluding a branch from CI</h2>
-<p>Use workflow to ignore branches</p>
-<pre><code class="language-yml">workflows:
-  deploy: # workflow label
-    jobs:
-      - deploy: #job name
-          filters:
-            branches:
-              ignore:
-                - gh-pages # branch name to ignore
-</code></pre>
-<p>You can restrict CI to a particular using <code>only</code> filter</p>
-<pre><code class="language-yml">workflows:
-  deploy: # workflow label
-    jobs:
-      - deploy: #job name
-          filters:
-            branches:
-              only: gh-pages # branch name to ignore
-</code></pre>
-<p>If it is not possible to create <code>.circleci/config.yaml</code> in this branch, you can enable <code>Only build pull requests</code> from project config in CircleCI. For your default branch and tags, it will always build all commits</p>
+<h2 id="setfragmentresult-setfragmentresultlistener">setFragmentResult &amp; setFragmentResultListener</h2>
+<h1 id="reference">Reference</h1>
+<ul>
+<li>https://developer.android.com/guide/fragments</li>
+<li>https://material.io/components/dialogs</li>
+<li>https://developer.android.com/guide/topics/ui/dialogs</li>
+<li>https://developer.android.com/guide/fragments/dialogs</li>
+<li>https://developer.android.com/reference/android/app/DialogFragment</li>
+<li>https://developer.android.com/reference/androidx/fragment/app/DialogFragment</li>
+</ul>
 
               
             </article>
@@ -439,7 +589,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../programming/DSL/" class="md-footer__link md-footer__link--prev" aria-label="Previous: DSL" rel="prev">
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Today I Learned" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -448,20 +598,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              DSL
+              Today I Learned
             </div>
           </div>
         </a>
       
       
         
-        <a href="../shell/" class="md-footer__link md-footer__link--next" aria-label="Next: Shell" rel="next">
+        <a href="../Permissions/" class="md-footer__link md-footer__link--next" aria-label="Next: Permissions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Shell
+              Permissions
             </div>
           </div>
           <div class="md-footer__button md-icon">
